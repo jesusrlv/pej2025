@@ -56,7 +56,7 @@ while($rowCategoria=$resultadoCategorias->fetch_assoc()){
             ';
         echo'
             <td>'.$rowUsr['telefono'].'</td>
- 	    <td>'.$rowUsr['usr'].'</td>';
+ 	    <td>'.$rowUsr['email'].'</td>';
 
         if($noDocs==0){
             echo'

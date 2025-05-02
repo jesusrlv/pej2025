@@ -6,6 +6,14 @@ $usr = $_SESSION['usr'];
 $nombre = $_SESSION['nombre'];
 $perfil = $_SESSION['perfil'];
 
+if(empty($id)){
+        session_start();
+        session_destroy();
+        $_SESSION = [];
+
+        echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
+}
+
 ?>
 <!doctype html>
 <html lang="es">

@@ -157,11 +157,18 @@ $(document).ready(function() {
                         icon: 'success',
                         imageUrl: 'img/logo_pej2024.png',
                         imageHeight: 200,
-                        title: 'Usuario correcto',
-                        text: 'Credenciales correctas',
+                        title: 'CONVOCATORIA CERRADA',
+                        text: 'GRACIAS POR PARTICIPAR. MUCHA SUERTE ',
                         confirmButtonColor: '#3085d6',
+			showCancelButton: true,
+			cancelButtonText: 'Constancia de participación',
                         footer: 'INJUVENTUD'
-                    }).then(function(){window.location='sistema/usuario/index.php';});
+                    }).then((result) => {
+    		if (result.dismiss === Swal.DismissReason.cancel) {
+        		// Redirigir al hipervínculo deseado
+			window.open('constancia.php', '_blank');
+    			}
+		});
                 }
                 else if (jsonData.success == "2")
                 {

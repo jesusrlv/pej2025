@@ -249,7 +249,8 @@ function contador(){
 
 function categoriaCompleta(){
   var categoria = document.getElementById('catCompleto').value;
-  console.log(categoria+' este este el valor')
+//document.getElementById('catCompleto').hidden = false;
+  console.log('este este el valor 2: '+categoria);
   $.ajax({
     type: "POST",
     url: 'query/categoria_titulo.php',
@@ -261,12 +262,15 @@ function categoriaCompleta(){
     {
       
       var jsonData = JSON.parse(JSON.stringify(data));
-      // var successCategoria = jsonData.cat;
-      console.log(jsonData.cat);
+      var successCategoria = jsonData.cat;
+      if(successCategoria != null || successCategoria !=""){
+      	console.log('es el data de JSON cat '+jsonData.cat);
 
-      let elemento = document.getElementById('categoriaOut');
+      var elemento = document.getElementById('categoriaOut');
       elemento.value = jsonData.cat;
+	console.log(jsonData.cat);
       // $('#resultSpan').html(data);
+      }
     }
 
   });

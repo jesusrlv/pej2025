@@ -14,12 +14,7 @@ require 'email/prcd/email/PHPMailer.php';
 require 'email/prcd/email/SMTP.php';
 
 $email = $_POST['email'];
-// $sql ="SELECT * FROM usr WHERE usr = '$email'";
-// $resultadoSql = $conn -> query($sql);
-// $rowSql = $resultadoSql->fetch_assoc();
-// $no_resultados = mysqli_num_rows($resultadoSql);
 
-//código saneado 
 $stmt = $conn->prepare("SELECT * FROM usr WHERE usr = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -30,6 +25,7 @@ $stmt = $conn->prepare("SELECT * FROM usr WHERE usr = ?");
     // Cerrar la sentencia y la conexión
     $stmt->close();
     $conn->close();
+
 
 // if(!empty($rowSql['email'])){
 if($no_resultados == 1){
@@ -48,7 +44,7 @@ if($no_resultados == 1){
         $mail->Host = 'mailc76.carrierzone.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
         $mail->Username = 'injuventud@zacatecas.gob.mx';                     // SMTP username
-        $mail->Password = 'A61q%9zev%z!W';                               // SMTP password
+        $mail->Password = 'De6/thf.613';                               // SMTP password
         $mail->SMTPSecure = 'SSL';                                  // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to 587 465
         

@@ -77,7 +77,7 @@ try {
     $mail->Host       = 'smtp.correoexchange.com.mx';  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'injuventud@zacatecas.gob.mx';                     // SMTP username
-    $mail->Password   = 'ONvJ1Nc4Rp';                               // SMTP password
+    $mail->Password   = 'De6/thf.613';                               // SMTP password
     $mail->SMTPSecure = 'TLS';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
 

@@ -114,7 +114,7 @@
           </a>
           <div class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link fw-bold py-1 px-0" href="../docs/convocatoria_premio_2023.pdf" target="_blank">Convocatoria</a>
+            <a class="nav-link fw-bold py-1 px-0" href="https://juventud.zacatecas.gob.mx/docs/convocatoria_pej2024.pdf" target="_blank">Convocatoria</a>
             <a class="nav-link fw-bold py-1 px-0" href="#">Documentos</a>
         </div>
       </nav>
@@ -149,10 +149,10 @@
                 <div class="d-grid gap-2 col-8 mx-auto" id="bloquearMDL">
                   <div class="d-grid gap-2">
 
-                    <a href="#" type="button" style="text-decoration:none ;text-decoration-color: aliceblue;" class="btn btn-outline-light"  data-bs-toggle="modal" data-bs-target="#registro"><i class="bi bi-person-plus-fill"></i> Registro</a>
+                    <a href="#" type="button" style="text-decoration:none ;text-decoration-color: aliceblue;" class="btn btn-outline-light"  data-bs-toggle="modal" data-bs-target="#registro" hidden><i class="bi bi-person-plus-fill"></i> Registro</a>
                   </div>
 
-                    <h6 class="text-light mt-2 text-center"><a href="#" style="text-decoration:none;" class="text-light"  data-bs-toggle="modal" data-bs-target="#pwdRecuperar"><small>¿Olvidaste tu contraseña?</small></a></h6>
+                    <h6 class="text-light mt-2 text-center"><a href="#" style="text-decoration:none;" class="text-light"  data-bs-toggle="modal" data-bs-target="#pwdRecuperar" hidden><small>¿Olvidaste tu contraseña?</small></a></h6>
                 </div>
                 <div class="d-grid gap-2 col-12 mx-auto">
                     <hr>
@@ -177,8 +177,8 @@
 
 <!-- zona modal's -->
 <!-- registro Mx -->
-<div class="modal fade" id="registro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal fade" id="registroX" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header bg-light">
         <h5 class="modal-title text-black" id="exampleModalLabel"><i class="bi bi-person-plus-fill"></i> Registro PEJ2024</h5>
@@ -244,7 +244,7 @@
 </div>
 
 <!-- pwd -->
-<div class="modal fade" id="pwdRecuperar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="pwdRecuperarX" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header bg-light">
@@ -261,7 +261,14 @@
           </div>
           <div class="form-text" id="basic-addon4">Se enviará un correo electrónico para recuperar tu contraseña.</div>
         </div>
-  
+        
+
+        <!-- <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
+          <form action="prcd/credenciales.php" method="post">
+          <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="basic-addon1" name="email" required>
+          <div id="emailHelp" class="form-text text-black">Se enviará un correo electrónico para recuperar tu contraseña.</div>
+        </div> -->
       </div>
       <div class="modal-footer bg-light">
         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i> Cerrar</button>

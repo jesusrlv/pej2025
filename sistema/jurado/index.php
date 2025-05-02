@@ -7,6 +7,14 @@ $nombre = $_SESSION['nombre'];
 $perfil = $_SESSION['perfil'];
 $categoria = $_SESSION['categoria'];
 
+if(empty($id)){
+	session_start();
+	session_destroy();
+	$_SESSION = [];
+
+	echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
+}
+
 ?>
 <!doctype html>
 <html lang="es">
@@ -14,7 +22,7 @@ $categoria = $_SESSION['categoria'];
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="INJUVENTUD" content="Consejo Juvenil">
+    <meta name="INJUVENTUD" content="PEJ2024">
     <meta name="" content="">
     <link rel="icon" type="image/png" href="../../img/icon.ico" sizes="22x21">
     <title>Perfil Jurado | PEJ2024</title>
@@ -218,7 +226,7 @@ $categoria = $_SESSION['categoria'];
       <div class="mb-4">
         <p><span id=""></span>
           <p class="h2 text-secondary" ><i class="bi bi-clipboard-check-fill"></i> Lista de postulantes | <a href="#inicio"><i class="bi bi-arrow-bar-up"></i></a></p></p>
-        <p><small>Listado de los <strong>postulantes</strong> al Consejo Juvenil.</small></p>
+        <p><small>Listado de los <strong>postulantes</strong> al PEJ2024.</small></p>
       </div>
       
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">

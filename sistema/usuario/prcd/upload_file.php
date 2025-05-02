@@ -1,6 +1,11 @@
 <?php    
     session_start();
-    include('../query/qc.php');
+    //include('../query/qc.php');
+
+        session_destroy();
+        $_SESSION = [];
+
+        echo "<script type=\"text/javascript\">location.href='sort.php';</script>";
 
     date_default_timezone_set('America/Mexico_City');
                   setlocale(LC_TIME, 'es_MX.UTF-8');

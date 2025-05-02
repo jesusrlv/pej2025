@@ -1,11 +1,9 @@
 <?php
 session_start();
+session_destroy();
+$_SESSION = [];
 
-$id = $_SESSION['id'];
-$usr = $_SESSION['usr'];
-$nombre = $_SESSION['nombre'];
-$perfil = $_SESSION['perfil'];
-$categoria = $_SESSION['categoria'];
+echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
 
 ?>
 <!doctype html>

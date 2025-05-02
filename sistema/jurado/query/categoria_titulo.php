@@ -6,8 +6,8 @@
     $sqlCategorias ="SELECT * FROM categorias WHERE id = '$categoria'";
     $resultadoCategorias = $conn -> query($sqlCategorias);
     $rowCat = $resultadoCategorias->fetch_assoc();
-    $categoria = $rowCat['nombre'];
+    $categoria2 = $rowCat['nombre'];
 
-    echo json_encode(array('cat'=>$categoria));
+    echo json_encode(array('cat'=>$categoria2));
     
 ?>

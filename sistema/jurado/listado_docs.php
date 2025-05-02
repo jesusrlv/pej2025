@@ -6,27 +6,25 @@ $usr = $_SESSION['usr'];
 $nombre = $_SESSION['nombre'];
 $perfil = $_SESSION['perfil'];
 $categoria = $_SESSION['categoria'];
-
 $idPostulante = $_REQUEST['id'];
 include('query/name.php');
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="INJUVENTUD" content="Consejo Juvenil">
+    <meta name="INJUVENTUD" content="PEJ 2024">
     <meta name="" content="">
     <link rel="icon" type="image/png" href="../../img/icon.ico" sizes="22x21">
-    <title>Perfil Jurado | Consejo Juvenil</title>
+    <title>Perfil Jurado | PEJ 2024</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
@@ -142,7 +140,7 @@ include('query/name.php');
         background-size: 350% 18%; /* Resize the background image to cover the entire container */
         background-position: 0 0;
         
-       
+      
         }
         #colorRounded{
           background-color: rgba(184, 11, 4, 0.5);
@@ -156,9 +154,7 @@ include('query/name.php');
 
     
   </head>
-  <body onload="categoriaCompleta();">
-    
-  <header>
+ <header>
 <span id="inicio"></span>
   <div class="navbar navbar-dark shadow-sm" style="background:#ff9d07">
     <div class="container">
@@ -171,6 +167,8 @@ include('query/name.php');
   </div>
 </header>
 
+  <body onload="categoriaCompleta();">
+
 <main id="imgPortrait">
 
 
@@ -181,33 +179,31 @@ include('query/name.php');
         <h1 class="fw-light"><img src="../../img/PEJ23.png" alt="" width="360"></h1>
         <h2 class="fw-bold" style="color:white">Bienvenido</h2>
         <h2 class="fw-bold" style="color:white"><i class="bi bi-person-circle"></i></h2>
-        <h2 class="fw-bold" style="color:white"><?php echo $nombre ?></h2>
-        <?php echo '<input type="text" value="'.$categoria.'" id="catCompleto" hidden>'?>
-        <h5 class="fw-bold" style="color:white">Mesa: <output id="categoriaOut"></h5>
+
+	<?php echo '<input type="text" value="'.$categoria.'" id="catCompleto" hidden>'?>
+	<h5 class="fw-bold" style="color:white">Mesa: <output id="categoriaOut"></h5>
+
         <p id="resultSpan"></p>
-        <p class="lead text-light mt-2">Sistema de postulación del INJUVENTUD para integrarse al Consejo Juvenil del Estado de Zacatecas en su edición 20224.</p>
+        <p class="lead text-light mt-2">Sistema de calificación del PEJ en su edición 2024.</p>
         <p>
           <hr class="text-secondary">
           <a href="#seccion_convocatoria" class="btn btn-primary my-2"><i class="bi bi-clipboard-data-fill"></i> Dashboard</a>
-        </p>
       </div>
     </div>
   </section>
-
-  <div class="album py-5 bg-light mb-0">
+  <div class="album py-5 bg-light mb-0" hidden>
     <div class="container">
       <div class="d-grid gap-2">
         <a href="index.php" class="btn btn-outline-primary" type="button"><i class="bi bi-arrow-bar-left"></i> Regresar lista principal</a>
-      </div> 
+      </div>
     </div>
   </div>
-  
   <div class="album py-5 bg-light">
     <div class="container">
        
       <div class="mb-0">
         <p><span id="seccion_convocatoria"></span>
-          <p class="h2 text-secondary" ><i class="bi bi-file-earmark-post-fill"></i> Documentos | <a href="#inicio"><i class="bi bi-arrow-bar-up"></i></a></p></p>
+          <p class="h2 text-secondary" ><i class="bi bi-file-earmark-post-fill"></i> Documentos | <a href="#inicio"><i class="bi bi-arrow-bar-up"></i></a></p>
         <p><small>POSTULANTE: <strong><?php echo $rowName['nombre']?></strong>.</small></p>
       </div>
       
@@ -239,33 +235,11 @@ include('query/name.php');
   </div>
 
 </main>
-
-<footer class="text-light py-5" style="background:#e4037d">
-  <div class="container">
-    <div>
-      <div class="row">
-        <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
-          <p class="mb-0 text-center"><img src="../../img/logo_white_02.png"  width="180" alt=""></p>
-          <p class="mb-0 mt-1 text-center"><small>&copy; Desarrollo:<br> <strong class="text-light">Tecnologías de la Información | INJUVENTUD</strong></small></p>
-          <!-- <p class="mb-0 text-center"><small><a href="/" style="text-decoration: none;" class="text-light">Gobierno del estado de Zacatecas</a>.</small></p> -->
-        </div>
-        <div class="col-sm-3 col-md-6 col-lg-4 mt-2 text-center">
-          <img src="../../img/logo_pej2024.png" width="180" alt="">
-        </div>
-        <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
-          <p class="float-end mb-1 text-center">
-            <a href="#inicio" style="text-decoration: none;" class="text-light"><i class="bi bi-arrow-bar-up"></i> Arriba</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
   </body>
 </html>
-
+<script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     $("a[href^='#']").click(function(e) {
     e.preventDefault();

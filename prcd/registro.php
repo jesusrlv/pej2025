@@ -53,7 +53,7 @@ require('conn/qc.php');
         $mail->Host = 'mailc76.carrierzone.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
         $mail->Username = 'injuventud@zacatecas.gob.mx';                     // SMTP username
-        $mail->Password = 'A61q%9zev%z!W';                               // SMTP password
+        $mail->Password = 'De6/thf.613';                               // SMTP password
         $mail->SMTPSecure = 'SSL';                                  // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to 587 465
         

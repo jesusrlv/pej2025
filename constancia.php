@@ -1,12 +1,8 @@
 <?php
 session_start();
-
-    $usuario = $_SESSION['usr'];
-    $id = $_SESSION['id'];
-    $perfil = $_SESSION['perfil'];
     $nombre = $_SESSION['nombre'];
 
-require('pdf/fpdf/fpdf.php');
+require('sistema/usuario/pdf/fpdf/fpdf.php');
 
 class PDF extends FPDF
 {
@@ -14,9 +10,9 @@ class PDF extends FPDF
 function Header()
 {
     // Logo
-    // $pdf->MultiCell(0,9, $pdf->Image("../img/logos_pej2022.png", $pdf->GetX()+5, $pdf->GetY()+3, 180) ,0,"C");
+    // $pdf->MultiCell(0,9, $pdf->Image("img/logos_pej2022.png", $pdf->GetX()+5, $pdf->GetY()+3, 180) ,0,"C");
 
-    $this->Image('../../img/logos_pej2024.png',5,0,200);
+    $this->Image('img/logos_pej2024.png',5,0,200);
     // Arial bold 15
     $this->SetFont('Arial','B',15);
     // Movernos a la derecha
@@ -43,7 +39,7 @@ function Footer()
 $pdf = new PDF();
 $pdf->AliasNbPages();
 $pdf->AddPage();
-$pdf->Image('../../img/fondo_pej2022.png','0','0','250','300','PNG');
+$pdf->Image('img/fondo_pej2022.png','0','0','250','300','PNG');
 // $pdf->MultiCell(190,9, $pdf->Image("../img/logos_pej2022.png", $pdf->GetX()+5, $pdf->GetY()+3, 180) ,0,"C");
 $pdf->Ln();
 $pdf->SetFont('Arial','B',14);
@@ -63,7 +59,7 @@ Continúa abriendo brechas, rompiendo estigmas y creciendo, ¡Tu talento y capac
 '),0,'J',0);
 $pdf->SetFont('Arial','I',10);
 $pdf->Multicell(190,9,'En la ciudad de Zacatecas, Zac., agosto de 2024.',0,'C',0);
-$pdf->MultiCell(190,9, $pdf->Image("../../img/rubrica_pej2022.png", $pdf->GetX()+20, $pdf->GetY()+1, 150) ,0,"C",0);
+$pdf->MultiCell(190,9, $pdf->Image("img/rubrica_pej2022.png", $pdf->GetX()+20, $pdf->GetY()+1, 150) ,0,"C",0);
 //IMAGE (RUTA,X,Y,ANCHO,ALTO,EXTEN)
 $pdf->Ln();
 $pdf->Ln();
@@ -76,5 +72,5 @@ DEL ESTADO DE ZACATECAS',0,'C',0);
 $modo="I";
 $nombre_archivo="constancia_PEJ2024_".$usuario.".pdf";
 $pdf->Output($nombre_archivo,$modo);  
-
+session_abort();
 ?>
