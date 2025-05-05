@@ -63,7 +63,7 @@ $categoria = $_SESSION['categoria'];
         font-family: 'Montserrat', sans-serif;
       }
       #colorRounded{
-        background-color: rgba(235, 58, 84, 0.9);
+        background-color: rgba(184, 11, 4, 0.5);
       }
       #imgPortrait{
         background-image: url('../../img/fondo_pej2025.png');

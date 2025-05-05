@@ -16,7 +16,7 @@ $perfil = $_SESSION['perfil'];
     <meta name="INJUVENTUD" content="PEJ24">
     <meta name="" content="">
     <link rel="icon" type="image/png" href="../../img/icon.ico" sizes="22x21">
-    <title>Perfil Admin | PEJ2024</title>
+    <title>Perfil Admin | PEJ2025</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -43,10 +43,10 @@ $perfil = $_SESSION['perfil'];
         font-family: 'Montserrat', sans-serif;
       }
       #colorRounded{
-        background-color: rgba(235, 58, 84, 0.9);
+        background-color: rgba(184, 11, 4, 0.5);
       }
       #imgPortrait{
-        background-image: url('../../img/fondo_pej2024.jpg');
+        background-image: url('../../img/fondo_pej2025.png');
 
         object-fit: cover;
         background-position: auto 100%; /* Center the image */
@@ -224,7 +224,7 @@ $perfil = $_SESSION['perfil'];
 
 </main>
 
-<footer class="text-light py-5" style="background:#e4037d">
+<footer class="text-light py-5" style="background:rgb(61, 42, 93)">
   <div class="container">
     <div>
       <div class="row">
@@ -234,7 +234,7 @@ $perfil = $_SESSION['perfil'];
           <!-- <p class="mb-0 text-center"><small><a href="/" style="text-decoration: none;" class="text-light">Gobierno del estado de Zacatecas</a>.</small></p> -->
         </div>
         <div class="col-sm-3 col-md-6 col-lg-4 mt-2 text-center">
-          <img src="../../img/logo_pej2024.png" width="180" alt="">
+          <img src="../../img/logo_pej2025_01.png" width="180" alt="">
         </div>
         <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
           <p class="float-end mb-1 text-center">
