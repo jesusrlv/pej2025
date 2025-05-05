@@ -150,32 +150,48 @@ $(document).ready(function() {
  
                 // user is logged in successfully in the back-end
                 // let's redirect
-                if (jsonData.success == "1")
+
+    //             if (jsonData.success == "1")
+    //             {
+    //                 // location.href = 'my_profile.php';
+    //                 Swal.fire({
+    //                     icon: 'success',
+    //                     imageUrl: 'img/logo_pej2025_01.png',
+    //                     imageHeight: 200,
+    //                     title: 'CONVOCATORIA CERRADA',
+    //                     text: 'GRACIAS POR PARTICIPAR. MUCHA SUERTE ',
+    //                     confirmButtonColor: '#3085d6',
+		// 	showCancelButton: true,
+		// 	cancelButtonText: 'Constancia de participación',
+    //                     footer: 'INJUVENTUD'
+    //                 }).then((result) => {
+    // 		if (result.dismiss === Swal.DismissReason.cancel) {
+    //     		// Redirigir al hipervínculo deseado
+		// 	window.open('constancia.php', '_blank');
+    // 			}
+		// });
+    //             }
+
+              if (jsonData.success == "1")
                 {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_pej2024.png',
+                        imageUrl: 'img/logo_pej2025_01.png',
                         imageHeight: 200,
-                        title: 'CONVOCATORIA CERRADA',
-                        text: 'GRACIAS POR PARTICIPAR. MUCHA SUERTE ',
+                        title: 'Acceso a postulante correcto',
+                        text: 'Credenciales correctas',
                         confirmButtonColor: '#3085d6',
-			showCancelButton: true,
-			cancelButtonText: 'Constancia de participación',
                         footer: 'INJUVENTUD'
-                    }).then((result) => {
-    		if (result.dismiss === Swal.DismissReason.cancel) {
-        		// Redirigir al hipervínculo deseado
-			window.open('constancia.php', '_blank');
-    			}
-		});
+                    }).then(function(){window.location='sistema/usuario/index.php';});
                 }
+
                 else if (jsonData.success == "2")
                 {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_pej2024.png',
+                        imageUrl: 'img/logo_pej2025_01.png',
                         imageHeight: 200,
                         title: 'Usuario Admin correcto',
                         text: 'Credenciales correctas',
@@ -183,12 +199,13 @@ $(document).ready(function() {
                         footer: 'INJUVENTUD'
                     }).then(function(){window.location='sistema/admin/index.php';});
                 }
+
                 else if (jsonData.success == "3")
                 {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_pej2024.png',
+                        imageUrl: 'img/logo_pej2025_01.png',
                         imageHeight: 200,
                         title: 'Usuario Jurado correcto',
                         text: 'Credenciales correctas',
@@ -201,7 +218,7 @@ $(document).ready(function() {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_pej2024.png',
+                        imageUrl: 'img/logo_pej2025_01.png',
                         imageHeight: 200,
                         title: 'Usuario Migrtante correcto',
                         text: 'Credenciales correctas',
@@ -214,7 +231,7 @@ $(document).ready(function() {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_pej2024.png',
+                        imageUrl: 'img/logo_pej2025_01.png',
                         imageHeight: 200,
                         title: 'Usuario Notario correcto',
                         text: 'Credenciales correctas',

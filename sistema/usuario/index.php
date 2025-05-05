@@ -1,9 +1,20 @@
 <?php
 session_start();
-session_destroy();
-$_SESSION = [];
 
-echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
+if (!isset($_SESSION['usr'])) {
+    echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
+    exit();
+}
+else{
+    $nombre = $_SESSION['nombre'];
+    $categoria = $_SESSION['categoria'];
+    $perfil = $_SESSION['perfil'];
+    $id = $_SESSION['id'];
+}
+// session_destroy();
+// $_SESSION = [];
+
+// echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
 
 ?>
 <!doctype html>
@@ -15,7 +26,7 @@ echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
     <meta name="INJUVENTUD" content="Consejo Juvenil">
     <meta name="" content="">
     <link rel="icon" type="image/png" href="../../img/icon.ico" sizes="22x21">
-    <title>Perfil Usuario | PEJ2024</title>
+    <title>Perfil Usuario | PEJ2025</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -42,10 +53,10 @@ echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
         font-family: 'Montserrat', sans-serif;
       }
       #colorRounded{
-        background-color: rgba(235, 58, 84, 0.9);
+        background-color: rgba(61, 42, 93, 0.9);
       }
       #imgPortrait{
-        background-image: url('../../img/fondo_pej2024.jpg');
+        background-image: url('../../img/fondo_pej2025.png');
 
         object-fit: cover;
         background-position: 80% 100%; /* Center the image */
@@ -140,7 +151,7 @@ echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
        
         }
         #colorRounded{
-          background-color: rgba(235, 58, 84, 0.9);
+          background-color: rgba(61, 42, 93, 0.9);
           border-radius:0px;
         }
         #textPortada{
@@ -155,11 +166,11 @@ echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
     
 <header>
 <span id="inicio"></span>
-  <div class="navbar navbar-dark shadow-sm" style="background:#199bd8">
+  <div class="navbar navbar-dark shadow-sm" style="background:rgb(61, 42, 93);">
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <img src="../../img/logo_injuventud_0.png" width="20" alt="" class="me-1">
-        <strong id="textPortada">POSTULANTE | PREMIO ESTATAL DE LA JUVENTUD 2024</strong>
+        <strong id="textPortada">POSTULANTE | PREMIO ESTATAL DE LA JUVENTUD 2025</strong>
       </a>
       <a href="prcd/sort.php" type="button" class="btn btn-sm btn-outline-light"><i class="bi bi-door-open"></i> Salir</a>
     </div>
@@ -174,14 +185,14 @@ echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
     <!-- <div class="row py-lg-5"  style="background-image: url('../../img/logo_consejo_05.png')"> -->
     <div class="row py-lg-5"  >
       <div class="col-lg-6 col-md-8 mx-auto rounded p-2" id="colorRounded">
-        <h1 class="fw-light"><img src="../../img/logo_pej2024.png" alt="" width="360" style="padding:5px"></h1>
+        <h1 class="fw-light"><img src="../../img/logo_pej2025_01.png" alt="" width="100%" style="padding:10px; border-radius: 15px;"></h1>
         <h2 class="fw-bold" style="color:white">Bienvenido</h2>
         <h2 class="fw-bold" style="color:white"><i class="bi bi-person-circle"></i></h2>
         <h2 class="fw-bold" style="color:white"><?php echo $nombre ?></h2>
         <?php echo '<input type="text" value="'.$categoria.'" id="catCompleto" hidden>' ?>
         <h5 class="fw-bold" style="color:white">Categoría: <output id="categoriaOut"></h5>
         <p id="resultSpan"></p>
-        <p class="lead text-light mt-2">Sistema de postulación del INJUVENTUD para integrarse al Consejo Juvenil del Estado de Zacatecas en su edición 2024.</p>
+        <p class="lead text-light mt-2">Sistema de postulación del INJUVENTUD para integrarse al Consejo Juvenil del Estado de Zacatecas en su edición 2025.</p>
         <p>
           <hr class="text-secondary">
           <a href="#seccion_documentos" class="btn btn-primary my-2"><i class="bi bi-filetype-pdf"></i> Sección de documentos</a>
@@ -226,7 +237,7 @@ echo "<script type=\"text/javascript\">location.href='prcd/sort.php';</script>";
             <div class="card-body">
               <h5 class="card-title">Convocatoria</h5>
               <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-exclamation-triangle-fill text-warning"></i> Convocatoria vigente</h6>
-              <p class="card-text">Convocatoria vigente acerca de la postulación al Premio Estatal de la Juventud 2024.</p>
+              <p class="card-text">Convocatoria vigente acerca de la postulación al Premio Estatal de la Juventud 2025.</p>
               <p><a href="generador_constancia.php" target="_blank" style="text-decoration:none" class="btn btn-primary" id="constanciaP" hidden> <i class="bi bi-file-earmark-richtext"></i> Constancia de participación al PEJ204</a></p>
               
             </div>

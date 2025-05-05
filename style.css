@@ -17,6 +17,7 @@
       }
       #imgLogo{
         width: 100%;
+        border-radius: 3px;
       }
       h1 #imgLogoGob{
         width: 100%;
@@ -44,6 +45,7 @@
       }
       #imgLogo{
         width: 100%;
+        border-radius: 3px;
       }
       #preForm{
         background-color: rgba(61, 42, 93, 0.9);
@@ -66,7 +68,7 @@
         font-size: 27px;
         }
     #imgLogo{
-    width: 36%;
+      width: 100%;
     }
     
 }
@@ -96,6 +98,7 @@
       }
       #imgLogo{
         width: 100%;
+        border-radius: 3px;
       }
 }
 

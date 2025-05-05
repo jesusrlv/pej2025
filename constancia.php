@@ -70,7 +70,7 @@ DEL ESTADO DE ZACATECAS',0,'C',0);
 
 // $pdf->Output();
 $modo="I";
-$nombre_archivo="constancia_PEJ2024_".$usuario.".pdf";
+$nombre_archivo="constancia_PEJ2025_".$usuario.".pdf";
 $pdf->Output($nombre_archivo,$modo);  
 session_abort();
 ?>
