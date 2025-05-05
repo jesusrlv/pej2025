@@ -20,7 +20,7 @@ while($rowQuery = $resultadoQuery ->fetch_assoc()){
     ';
         if($no_resultados == 0 || empty($no_resultados)){
             echo '
-        <div class="card border-danger text-light" style="height:300px; background-color: rgba(228, 3, 125, 0.9);" id="botonesFiles">
+        <div class="card border-danger text-light" style="height:300px; background-color: rgba(230, 55, 92, 0.9);" id="botonesFiles">
         ';
         }
         // else if($no_resultados > 0 && $no_resultados <= $no_resultados_warning){
@@ -30,9 +30,11 @@ while($rowQuery = $resultadoQuery ->fetch_assoc()){
         // }
         else if($no_resultados > 0){
             echo '
-        <div class="card border-success  text-light" style="height:300px; background-color: rgba(25, 155, 216, 0.9);">
+        <div class="card border-success  text-light" style="height:300px; background-color: rgba(61, 42, 93, 0.9);">
             ';
         }
+
+
           echo'
             
             <div class="card-body text-justify">

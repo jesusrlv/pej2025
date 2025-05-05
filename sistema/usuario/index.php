@@ -186,7 +186,7 @@ else{
     <div class="row py-lg-5"  >
       <div class="col-lg-6 col-md-8 mx-auto rounded p-2" id="colorRounded">
         <h1 class="fw-light"><img src="../../img/logo_pej2025_01.png" alt="" width="100%" style="padding:10px; border-radius: 15px;"></h1>
-        <h2 class="fw-bold" style="color:white">Bienvenido</h2>
+        <h2 class="fw-bold" style="color:white">Bienvenid@</h2>
         <h2 class="fw-bold" style="color:white"><i class="bi bi-person-circle"></i></h2>
         <h2 class="fw-bold" style="color:white"><?php echo $nombre ?></h2>
         <?php echo '<input type="text" value="'.$categoria.'" id="catCompleto" hidden>' ?>
@@ -242,7 +242,7 @@ else{
               
             </div>
             <div class="card-footer">
-              <a href="https://juventud.zacatecas.gob.mx/docs/convocatoria_pej2024.pdf" target="_blank" class="card-link" style="text-decoration: none"><i class="bi bi-eye"></i> Revisar</a>
+              <a href="https://juventud.zacatecas.gob.mx/docs/convocatoria_pej2025.pdf" target="_blank" class="card-link" style="text-decoration: none"><i class="bi bi-eye"></i> Revisar</a>
             </div>
           </div>
         </div>
@@ -270,7 +270,7 @@ else{
 
 </main>
 
-<footer class="text-light py-5" style="background:#e4037d">
+<footer class="text-light py-5" style="background:rgb(61, 42, 93)">
   <div class="container">
     <div>
       <div class="row">
@@ -280,7 +280,7 @@ else{
           <!-- <p class="mb-0 text-center"><small><a href="/" style="text-decoration: none;" class="text-light">Gobierno del estado de Zacatecas</a>.</small></p> -->
         </div>
         <div class="col-sm-3 col-md-6 col-lg-4 mt-2 text-center">
-          <img src="../../img/logo_pej2024.png" width="180" alt="">
+          <img src="../../img/logo_pej2025_01.png" width="180" alt="">
         </div>
         <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
           <p class="float-end mb-1 text-center">

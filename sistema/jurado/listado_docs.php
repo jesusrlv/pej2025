@@ -15,10 +15,10 @@ include('query/name.php');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="INJUVENTUD" content="PEJ 2024">
+    <meta name="INJUVENTUD" content="PEJ 2025">
     <meta name="" content="">
     <link rel="icon" type="image/png" href="../../img/icon.ico" sizes="22x21">
-    <title>Perfil Jurado | PEJ 2024</title>
+    <title>Perfil Jurado | PEJ 2025</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -45,10 +45,10 @@ include('query/name.php');
         font-family: 'Montserrat', sans-serif;
       }
       #colorRounded{
-        background-color: rgba(235, 58, 84, 0.9);
+        background-color: rgba(61, 42, 93, 0.9);
       }
       #imgPortrait{
-        background-image: url('../../img/fondo_pej2024.jpg');
+        background-image: url('../../img/fondo_pej2025.png');
 
         object-fit: cover;
         background-position: auto 100%; /* Center the image */
@@ -143,7 +143,7 @@ include('query/name.php');
       
         }
         #colorRounded{
-          background-color: rgba(184, 11, 4, 0.5);
+          background-color: rgba(61, 42, 93, 0.9);
           border-radius:0px;
         }
         #textPortada{
@@ -176,8 +176,8 @@ include('query/name.php');
     <!-- <div class="row py-lg-5"  style="background-image: url('../../img/logo_consejo_05.png')"> -->
     <div class="row py-lg-5" >
       <div class="col-lg-6 col-md-8 mx-auto rounded p-2" id="colorRounded">
-        <h1 class="fw-light"><img src="../../img/PEJ23.png" alt="" width="360"></h1>
-        <h2 class="fw-bold" style="color:white">Bienvenido</h2>
+      <h1 class="fw-light"><img src="../../img/logo_pej2025_01.png" alt="" width="100%" style="padding:10px; border-radius: 15px;"></h1>
+        <h2 class="fw-bold" style="color:white">Bienvenid@</h2>
         <h2 class="fw-bold" style="color:white"><i class="bi bi-person-circle"></i></h2>
 
 	<?php echo '<input type="text" value="'.$categoria.'" id="catCompleto" hidden>'?>

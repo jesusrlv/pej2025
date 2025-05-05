@@ -22,10 +22,10 @@ if(empty($id)){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="INJUVENTUD" content="PEJ2024">
+    <meta name="INJUVENTUD" content="PEJ2025">
     <meta name="" content="">
     <link rel="icon" type="image/png" href="../../img/icon.ico" sizes="22x21">
-    <title>Perfil Jurado | PEJ2024</title>
+    <title>Perfil Jurado | PEJ2025</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -52,10 +52,10 @@ if(empty($id)){
         font-family: 'Montserrat', sans-serif;
       }
       #colorRounded{
-        background-color: rgba(235, 58, 84, 0.9);
+        background-color: rgba(61, 42, 93, 0.9);
       }
       #imgPortrait{
-        background-image: url('../../img/fondo_pej2024.jpg');
+        background-image: url('../../img/fondo_pej2025.png');
 
         object-fit: cover;
         background-position: auto 100%; /* Center the image */
@@ -150,7 +150,7 @@ if(empty($id)){
        
         }
         #colorRounded{
-          background-color: rgba(184, 11, 4, 0.5);
+          background-color: rgba(61, 42, 93, 0.9);
           border-radius:0px;
         }
         #textPortada{
@@ -169,7 +169,7 @@ if(empty($id)){
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <img src="../../img/logo_injuventud_0.png" width="20" alt="" class="me-1">
-        <strong>JURADO | PEJ 2024</strong>
+        <strong>JURADO | PEJ 2025</strong>
       </a>
       <a href="prcd/sort.php" type="button" class="btn btn-sm btn-outline-light"><i class="bi bi-door-open"></i> Salir</a>
     </div>
@@ -181,14 +181,14 @@ if(empty($id)){
     <!-- <div class="row py-lg-5"  style="background-image: url('../../img/logo_consejo_05.png')"> -->
     <div class="row py-lg-5" >
       <div class="col-lg-6 col-md-8 mx-auto rounded p-2" id="colorRounded">
-        <h1 class="fw-light"><img src="../../img/logo_pej2024.png" alt="" width="360"></h1>
-        <h2 class="fw-bold" style="color:white">Bienvenido</h2>
+        <h1 class="fw-light"><img src="../../img/logo_pej2025_01.png" alt="" width="100%" style="padding:10px; border-radius: 15px;"></h1>
+        <h2 class="fw-bold" style="color:white">Bienvenid@</h2>
         <h2 class="fw-bold" style="color:white"><i class="bi bi-person-circle"></i></h2>
         <h2 class="fw-bold" style="color:white"><?php echo $nombre ?></h2>
         <?php echo '<input type="text" value="'.$categoria.'" id="catCompleto" hidden>'?>
         <h5 class="fw-bold" style="color:white">Mesa: <output id="categoriaOut"></h5>
         <p id="resultSpan"></p>
-        <p class="lead text-light mt-2">Sistema de calificación del INJUVENTUD del PEJ2024.</p>
+        <p class="lead text-light mt-2">Sistema de calificación del INJUVENTUD del PEJ2025.</p>
         <p>
           <hr class="text-secondary">
           <a href="#seccion_convocatoria" class="btn btn-primary my-2"><i class="bi bi-clipboard-data-fill"></i> Dashboard</a>
@@ -226,7 +226,7 @@ if(empty($id)){
       <div class="mb-4">
         <p><span id=""></span>
           <p class="h2 text-secondary" ><i class="bi bi-clipboard-check-fill"></i> Lista de postulantes | <a href="#inicio"><i class="bi bi-arrow-bar-up"></i></a></p></p>
-        <p><small>Listado de los <strong>postulantes</strong> al PEJ2024.</small></p>
+        <p><small>Listado de los <strong>postulantes</strong> al PEJ5.</small></p>
       </div>
       
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -264,7 +264,7 @@ if(empty($id)){
   
   </main>
   
-  <footer class="text-light py-5" style="background:#e4037d">
+  <footer class="text-light py-5" style="background:rgb(61, 42, 93)">
     <div class="container">
       <div>
         <div class="row">
@@ -274,7 +274,7 @@ if(empty($id)){
             <!-- <p class="mb-0 text-center"><small><a href="/" style="text-decoration: none;" class="text-light">Gobierno del estado de Zacatecas</a>.</small></p> -->
             </div>
             <div class="col-sm-3 col-md-6 col-lg-4 mt-2 text-center">
-              <img src="../../img/logo_pej2024.png" width="180" alt="">
+              <img src="../../img/logo_pej2025_01.png" width="180" alt="">
               </div>
               <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
                 <p class="float-end mb-1 text-center">
