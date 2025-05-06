@@ -239,7 +239,7 @@ function contador(){
       imageUrl: '../../img/logo_pej2025_01.png',
       imageHeight: 200,
       title: 'Proceso finalizado',
-      html: 'Has cargado los <strong>11 documentos</strong> para postularte al <strong>PEJ2025</strong>. Ya puedes descargar la constancia de participación en la sección de Convocatoria.<p>Contesta una breve encuesta para ayudarnos a mejorar el sistema de postulación al PEJ2025.</p><p><a href="https://forms.gle/2v1x5G3Z4Y6g7z9K8" target="_blank">Encuesta</a></p>',
+      html: 'Has cargado los <strong>11 documentos</strong> para postularte al <strong>PEJ2025</strong>. Ya puedes descargar la constancia de participación en la sección de Convocatoria.<p>Contesta una breve encuesta para ayudarnos a mejorar el sistema de postulación al PEJ2025.</p><p><a href="https://forms.gle/iLMZR3EWTwvpPmA1A" target="_blank">Encuesta</a></p>',
       confirmButtonColor: '#3085d6',
       footer: 'INJUVENTUD'
 
